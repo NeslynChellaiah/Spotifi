@@ -1,4 +1,45 @@
 .main-area {
     display: inline-block;
     min-height: calc(100vh - 80px);
+    padding: 8px 15px 0px 15px;
+}
+
+.header-section1 {
+    display: flex;
+}
+
+.left-arrow {
+    margin-right: 15px;
+}
+
+.left-arrow, .right-arrow {
+    width: 2.2em;
+    height: 2.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}
+
+.header {
+    height: 2em;
+}
+
+.container {
+    height: calc(100vh - 80px - 3em);
+    width: 100%;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 1025px) {
+    .right-arrow {
+        visibility: hidden;
+    }
+
+    .main-area {
+        padding: 10px 5px 0px 5px;
+    }
 }

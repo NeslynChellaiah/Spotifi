@@ -9,10 +9,6 @@
   display: flex;
 }
 
-.side-nav, .main-area {
-  min-height: calc(100vh - 80px);
-}
-
 .side-nav {
   width: 241px;
   background: #121212;
@@ -20,7 +16,7 @@
   flex-shrink: 0;
   padding: 0px 8px;
   position: relative;
-  /* overflow: auto; */
+  min-height: calc(100vh - 80px);
 }
 
 .main-area {
